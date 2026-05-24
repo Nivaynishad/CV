@@ -2,269 +2,493 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>CV - Vinay Kumar</title>
+<title>Vinay Kumar — Curriculum Vitae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* Print-friendly, professional A4 CV */
-  @page { size: A4; margin: 16mm; }
+  /* ========================================
+     EXECUTIVE TEMPLATE — Two-column sidebar
+     A4 print-ready, refined typography
+     ======================================== */
 
-  * { box-sizing: border-box; }
+  @page { size: A4; margin: 0; }
 
-  body {
-    font-family: "Calibri", "Segoe UI", Arial, sans-serif;
-    color: #222;
-    line-height: 1.45;
-    font-size: 11.5pt;
-    margin: 0;
-    padding: 24px;
-    max-width: 820px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff;
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #16263f;
+    --navy-light: #1f3559;
+    --gold: #c9a961;
+    --gold-soft: #e0c682;
+    --text-dark: #1f2937;
+    --text-muted: #5a6478;
+    --line: #e2e6ee;
   }
 
-  header {
-    text-align: center;
-    border-bottom: 2px solid #1f3a5f;
-    padding-bottom: 10px;
-    margin-bottom: 14px;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 22pt;
-    letter-spacing: 1px;
-    color: #1f3a5f;
-  }
-
-  header .tagline {
-    margin-top: 4px;
-    font-size: 11pt;
-    color: #555;
-    font-style: italic;
-  }
-
-  header .contact {
-    margin-top: 6px;
+  html, body {
+    background: #eef1f6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    color: var(--text-dark);
     font-size: 10.5pt;
-    color: #333;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
-  h2 {
-    color: #1f3a5f;
-    font-size: 13pt;
-    margin: 16px 0 6px 0;
-    border-bottom: 1px solid #c8d0db;
-    padding-bottom: 2px;
-    text-transform: uppercase;
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(20, 30, 60, 0.12);
+    display: grid;
+    grid-template-columns: 78mm 1fr;
+    overflow: hidden;
+  }
+
+  /* ============== SIDEBAR ============== */
+  .sidebar {
+    background: var(--navy);
+    color: #e8edf5;
+    padding: 28px 24px;
+  }
+
+  .sidebar .name-block {
+    border-bottom: 1px solid rgba(201, 169, 97, 0.35);
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+  }
+
+  .sidebar h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 26pt;
+    line-height: 1.05;
+    color: #fff;
     letter-spacing: 0.5px;
   }
 
-  h3 {
-    margin: 8px 0 2px 0;
+  .sidebar h1 .last { color: var(--gold-soft); display: block; }
+
+  .sidebar .role {
+    margin-top: 8px;
+    font-size: 9.5pt;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+  }
+
+  .sidebar h2 {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 11.5pt;
+    font-weight: 600;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 22px 0 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
   }
 
-  .meta {
-    font-size: 10pt;
-    color: #555;
-    font-style: italic;
-    margin-bottom: 4px;
-  }
-
-  ul {
-    margin: 4px 0 8px 18px;
-    padding: 0;
-  }
-
-  li { margin-bottom: 3px; }
-
-  .two-col {
+  .sidebar .contact-item {
     display: flex;
-    gap: 24px;
-  }
-  .two-col > div { flex: 1; }
-
-  .details-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 4px;
-  }
-  .details-table td {
-    padding: 3px 6px;
-    vertical-align: top;
-    font-size: 11pt;
-  }
-  .details-table td:first-child {
-    width: 35%;
-    color: #555;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 9px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+    color: #d6dde8;
+    word-break: break-word;
   }
 
-  .declaration {
-    margin-top: 12px;
-    font-size: 11pt;
+  .sidebar .icon {
+    width: 14px; height: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    fill: var(--gold-soft);
   }
 
-  .signature-row {
+  .sidebar .detail-list {
+    list-style: none;
+    font-size: 9.5pt;
+    color: #d6dde8;
+  }
+
+  .sidebar .detail-list li {
+    padding: 5px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.08);
     display: flex;
     justify-content: space-between;
-    margin-top: 22px;
-    font-size: 11pt;
+    gap: 8px;
   }
 
+  .sidebar .detail-list li:last-child { border-bottom: none; }
+  .sidebar .detail-list .label { color: var(--gold-soft); font-weight: 500; }
+  .sidebar .detail-list .value { text-align: right; }
+
+  .sidebar .skill-item {
+    margin-bottom: 11px;
+    font-size: 9.5pt;
+  }
+
+  .sidebar .skill-item .skill-name {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 9.5pt;
+  }
+
+  .sidebar .skill-bar {
+    height: 4px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .sidebar .skill-bar > div {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-soft) 100%);
+    border-radius: 2px;
+  }
+
+  .sidebar .lang-list {
+    list-style: none;
+    font-size: 9.5pt;
+    color: #d6dde8;
+  }
+
+  .sidebar .lang-list li {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sidebar .lang-list .level {
+    color: var(--gold-soft);
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ============== MAIN ============== */
+  .main {
+    padding: 32px 30px 28px;
+    background: #fff;
+  }
+
+  .main h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 14pt;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    position: relative;
+    border-bottom: 2px solid var(--navy);
+    display: inline-block;
+    padding-right: 30px;
+  }
+
+  .main section { margin-bottom: 18px; }
+  .main section:first-child h2 { margin-top: 0; }
+
+  .objective {
+    font-size: 10.5pt;
+    line-height: 1.6;
+    color: var(--text-muted);
+    text-align: justify;
+    font-style: italic;
+    border-left: 3px solid var(--gold);
+    padding: 4px 0 4px 14px;
+    background: #faf8f3;
+  }
+
+  .item {
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .item::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 6px;
+    width: 9px; height: 9px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.18);
+  }
+
+  .item::after {
+    content: '';
+    position: absolute;
+    left: 4px; top: 17px;
+    bottom: -10px;
+    width: 1px;
+    background: var(--line);
+  }
+
+  .item:last-child::after { display: none; }
+
+  .item .title {
+    font-size: 11pt;
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  .item .institution {
+    font-size: 10pt;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-top: 1px;
+  }
+
+  .item .meta {
+    font-size: 9pt;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 3px 0 5px;
+    font-weight: 500;
+  }
+
+  .item ul {
+    margin: 5px 0 0 16px;
+    color: var(--text-muted);
+    font-size: 10pt;
+  }
+
+  .item ul li {
+    margin-bottom: 3px;
+    line-height: 1.5;
+  }
+
+  .strengths-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 18px;
+    margin-top: 4px;
+  }
+
+  .strengths-grid .strength {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 10pt;
+    color: var(--text-muted);
+  }
+
+  .strengths-grid .strength::before {
+    content: '✓';
+    color: var(--gold);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .declaration-box {
+    margin-top: 14px;
+    padding: 14px 18px;
+    background: #faf8f3;
+    border-left: 3px solid var(--gold);
+    font-size: 10pt;
+    color: var(--text-muted);
+  }
+
+  .declaration-box .sign-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 10pt;
+    color: var(--text-dark);
+  }
+
+  .declaration-box .sign-row strong { color: var(--navy); }
+
+  /* ============== PRINT ============== */
   @media print {
-    body { padding: 0; }
+    html, body { background: #fff; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      min-height: 297mm;
+    }
+    .item::after { background: var(--line) !important; }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>VINAY KUMAR</h1>
-  <div class="tagline">Aspiring Pharmacist &middot; Diploma in Pharmacy (D.Pharm)</div>
-  <div class="contact">
-    Ayodhya, Uttar Pradesh, India &nbsp;|&nbsp; +91-9876543210 &nbsp;|&nbsp;
-    vinay.pharma25@gmail.com
-  </div>
-</header>
+<div class="page">
 
-<section>
-  <h2>Career Objective</h2>
-  <p>
-    A dedicated and hardworking Diploma in Pharmacy graduate seeking an
-    entry-level opportunity in a reputed pharmaceutical organisation, where I
-    can apply my academic knowledge, hospital training experience, and
-    willingness to learn to contribute meaningfully to the team while
-    continuing to grow professionally.
-  </p>
-</section>
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
 
-<section>
-  <h2>Education</h2>
-
-  <h3>Diploma in Pharmacy (D.Pharm)</h3>
-  <div class="meta">
-    Jhunjhunwala Institute of Medical Science, Uttar Pradesh &nbsp;|&nbsp;
-    2023 &ndash; 2025 (Second Year examinations completed in 2025)
-  </div>
-  <ul>
-    <li>Core subjects: Pharmaceutics, Pharmacology, Pharmaceutical Chemistry,
-      Pharmacognosy, Hospital &amp; Clinical Pharmacy, Pharmaceutical
-      Jurisprudence, Biochemistry &amp; Clinical Pathology, Drug Store and
-      Business Management.</li>
-  </ul>
-
-  <h3>Course on Computer Concepts (CCC) &mdash; NIELIT</h3>
-  <div class="meta">
-    National Institute of Electronics &amp; Information Technology, Government of India
-    &nbsp;|&nbsp; Year of Completion: 2024
-  </div>
-  <ul>
-    <li>Certified in computer fundamentals, MS Office, internet usage, email,
-      and basic digital financial tools.</li>
-  </ul>
-
-  <h3>Higher Secondary Certificate (Class XII)</h3>
-  <div class="meta">
-    Kendriya Vidyalaya, Ayodhya &mdash; Central Board of Secondary Education (CBSE) &nbsp;|&nbsp;
-    Year of Passing: 2023 &nbsp;|&nbsp; Stream: Science (PCB)
-  </div>
-
-  <h3>Secondary School Certificate (Class X)</h3>
-  <div class="meta">
-    Kendriya Vidyalaya, Ayodhya &mdash; Central Board of Secondary Education (CBSE) &nbsp;|&nbsp;
-    Year of Passing: 2021
-  </div>
-</section>
-
-<section>
-  <h2>Hospital Training / Internship</h2>
-  <h3>Pharmacy Trainee &mdash; Rajarshi Dashrath Autonomous State Medical College, Ayodhya</h3>
-  <div class="meta">June 2025 &ndash; August 2025</div>
-  <ul>
-    <li>Completed 500 hours of practical training in the hospital pharmacy as
-      part of the D.Pharm curriculum.</li>
-    <li>Assisted licensed pharmacists in dispensing prescription medicines to
-      in-patients and out-patients accurately.</li>
-    <li>Gained hands-on exposure to inventory management, stock maintenance,
-      and proper storage conditions for pharmaceutical products.</li>
-    <li>Learned to read and interpret prescriptions, identify common drug
-      classes, dosage forms, and routes of administration.</li>
-    <li>Observed and supported the preparation of intravenous admixtures and
-      basic compounding under supervision.</li>
-    <li>Maintained patient records, narcotic registers, and expiry registers
-      in compliance with hospital protocols.</li>
-    <li>Interacted with patients to explain dosage instructions while
-      maintaining patient confidentiality.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Key Skills</h2>
-  <div class="two-col">
-    <div>
-      <strong>Pharmaceutical</strong>
-      <ul>
-        <li>Dispensing, compounding &amp; pharmaceutical calculations</li>
-        <li>Generic and brand drug nomenclature</li>
-        <li>GMP, GPP &amp; pharmaceutical jurisprudence basics</li>
-        <li>Stock and inventory management</li>
-      </ul>
+    <div class="name-block">
+      <h1>Vinay<span class="last">Kumar</span></h1>
+      <div class="role">Aspiring Pharmacist</div>
     </div>
-    <div>
-      <strong>Technical &amp; Soft Skills</strong>
-      <ul>
-        <li>CCC certified (NIELIT, Government of India)</li>
-        <li>MS Office (Word, Excel, PowerPoint)</li>
-        <li>Good communication &amp; teamwork</li>
-        <li>Attention to detail and discipline</li>
-      </ul>
+
+    <h2>Contact</h2>
+    <div class="contact-item">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <span>vinay.pharma25@gmail.com</span>
     </div>
-  </div>
-</section>
-
-<section>
-  <h2>Strengths</h2>
-  <ul>
-    <li>Patient and approachable with genuine interest in patient welfare.</li>
-    <li>Quick learner who adapts well to new environments.</li>
-    <li>Honest, sincere and committed to professional ethics.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Languages Known</h2>
-  <p>Hindi &nbsp;&middot;&nbsp; English</p>
-</section>
-
-<section>
-  <h2>Personal Details</h2>
-  <table class="details-table">
-    <tr><td>Father's Name</td><td>Vijay Kumar</td></tr>
-    <tr><td>Date of Birth</td><td>15 / 08 / 2005</td></tr>
-    <tr><td>Gender</td><td>Male</td></tr>
-    <tr><td>Nationality</td><td>Indian</td></tr>
-    <tr><td>Marital Status</td><td>Single</td></tr>
-    <tr><td>Permanent Address</td><td>House No. 142, Civil Lines, Ayodhya, Uttar Pradesh &ndash; 224001</td></tr>
-  </table>
-</section>
-
-<section class="declaration">
-  <h2>Declaration</h2>
-  <p>
-    I hereby declare that the information provided above is true and correct
-    to the best of my knowledge and belief.
-  </p>
-  <div class="signature-row">
-    <div>
-      <strong>Place:</strong> Ayodhya<br/>
-      <strong>Date:</strong> ___ / ___ / 2025
+    <div class="contact-item">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+      <span>+91-9876543210</span>
     </div>
-    <div style="text-align:right;">
-      <strong>Signature</strong><br/>
-      <strong>Vinay Kumar</strong>
+    <div class="contact-item">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+      <span>Civil Lines, Ayodhya<br>Uttar Pradesh, 224001</span>
     </div>
-  </div>
-</section>
+
+    <h2>Personal</h2>
+    <ul class="detail-list">
+      <li><span class="label">Father</span><span class="value">Vijay Kumar</span></li>
+      <li><span class="label">DOB</span><span class="value">15 Aug 2005</span></li>
+      <li><span class="label">Gender</span><span class="value">Male</span></li>
+      <li><span class="label">Nationality</span><span class="value">Indian</span></li>
+      <li><span class="label">Marital</span><span class="value">Single</span></li>
+    </ul>
+
+    <h2>Core Skills</h2>
+    <div class="skill-item">
+      <div class="skill-name">Dispensing &amp; Compounding</div>
+      <div class="skill-bar"><div style="width:80%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Drug Inventory Management</div>
+      <div class="skill-bar"><div style="width:75%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Prescription Reading</div>
+      <div class="skill-bar"><div style="width:78%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Pharmaceutical Jurisprudence</div>
+      <div class="skill-bar"><div style="width:70%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">MS Office (CCC Certified)</div>
+      <div class="skill-bar"><div style="width:85%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Patient Communication</div>
+      <div class="skill-bar"><div style="width:82%"></div></div>
+    </div>
+
+    <h2>Languages</h2>
+    <ul class="lang-list">
+      <li><span>Hindi</span><span class="level">Native</span></li>
+      <li><span>English</span><span class="level">Fluent</span></li>
+    </ul>
+
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+
+    <section>
+      <h2>Profile</h2>
+      <p class="objective">
+        A dedicated and hardworking Diploma in Pharmacy graduate seeking an
+        entry-level opportunity in a reputed pharmaceutical organisation, where I
+        can apply my academic knowledge, hospital training experience, and
+        willingness to learn to contribute meaningfully to the team while
+        continuing to grow professionally.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="title">Diploma in Pharmacy (D.Pharm)</div>
+        <div class="institution">Jhunjhunwala Institute of Medical Science, Uttar Pradesh</div>
+        <div class="meta">2023 — 2025 &nbsp;·&nbsp; Second Year Completed</div>
+        <ul>
+          <li>Pharmaceutics, Pharmacology, Pharmaceutical Chemistry,
+            Pharmacognosy, Hospital &amp; Clinical Pharmacy.</li>
+          <li>Pharmaceutical Jurisprudence, Biochemistry &amp; Clinical
+            Pathology, Drug Store and Business Management.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="title">Course on Computer Concepts (CCC)</div>
+        <div class="institution">NIELIT — Government of India</div>
+        <div class="meta">Year of Completion: 2024</div>
+        <ul>
+          <li>Certified in MS Office, internet usage, email and basic
+            digital tools by the Govt. of India.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="title">Higher Secondary (Class XII) — Science (PCB)</div>
+        <div class="institution">Kendriya Vidyalaya, Ayodhya — CBSE Board</div>
+        <div class="meta">Year of Passing: 2023</div>
+      </div>
+
+      <div class="item">
+        <div class="title">Secondary School (Class X)</div>
+        <div class="institution">Kendriya Vidyalaya, Ayodhya — CBSE Board</div>
+        <div class="meta">Year of Passing: 2021</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Hospital Training</h2>
+      <div class="item">
+        <div class="title">Pharmacy Trainee</div>
+        <div class="institution">Rajarshi Dashrath Autonomous State Medical College, Ayodhya</div>
+        <div class="meta">June 2025 — August 2025 &nbsp;·&nbsp; 500 Hours</div>
+        <ul>
+          <li>Assisted licensed pharmacists in dispensing prescription medicines
+            to in-patients and out-patients with full accuracy.</li>
+          <li>Gained hands-on exposure to inventory management, stock rotation
+            and storage of pharmaceutical products.</li>
+          <li>Learned to interpret prescriptions, identify drug classes, dosage
+            forms and routes of administration.</li>
+          <li>Supported preparation of intravenous admixtures and basic
+            compounding under supervision.</li>
+          <li>Maintained patient records, narcotic registers and expiry
+            registers as per hospital protocols.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Strengths</h2>
+      <div class="strengths-grid">
+        <div class="strength">Patient-centric &amp; approachable attitude</div>
+        <div class="strength">Quick learner, adapts well to new settings</div>
+        <div class="strength">Strong attention to detail &amp; accuracy</div>
+        <div class="strength">Honest, sincere and ethically committed</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Declaration</h2>
+      <div class="declaration-box">
+        I hereby declare that the information provided above is true and
+        correct to the best of my knowledge and belief.
+        <div class="sign-row">
+          <div><strong>Place:</strong> Ayodhya<br><strong>Date:</strong> ___ / ___ / 2025</div>
+          <div style="text-align:right;"><strong>Signature</strong><br><strong>Vinay Kumar</strong></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
 
 </body>
 </html>

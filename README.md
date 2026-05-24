@@ -1,48 +1,39 @@
-# My CV — D.Pharm
+# Vinay Kumar — CV
 
-A simple, professional CV template prepared for applying to pharmaceutical
-companies after completing the second-year D.Pharm examinations and hospital
-training.
+Two professional CV templates designed for applying to pharmaceutical
+companies after completing the second-year D.Pharm examinations and
+hospital training.
 
 ## Files
 
-- **`CV.md`** — Markdown version. Easy to read on GitHub, copy-paste into
-  any document, or convert to PDF/Word later.
-- **`CV.html`** — A clean, A4-sized printable version. Open it in any
-  browser and use **Print → Save as PDF** to generate a PDF you can email
-  to recruiters.
+| File | Description |
+|---|---|
+| **`CV.html`** | **Executive (Modern Sidebar)** — A premium two-column layout with a navy + gold colour scheme, refined Playfair Display + Inter typography, skill bars, and a professional sidebar. Best for impressing modern HR teams. |
+| **`CV-classic.html`** | **Classic Elegant (Single Column)** — A timeless, conservative single-column design using Cormorant Garamond serif headers. Best for traditional pharma firms, hospital chains and government applications. |
+| **`CV.md`** | Plain-text Markdown version — copy/paste friendly. |
 
-## How to Use
+Both HTML templates are A4-sized, print-perfect, and ready to be exported
+as PDF directly from any modern browser.
 
-1. **Replace every placeholder** in square brackets, for example:
-   - `[YOUR FULL NAME]`
-   - `[Name of College / Institute]`
-   - `[Name of Hospital / Pharmacy]`
-   - `+91-XXXXXXXXXX`, `your.email@example.com`
-   - All `20XX` year placeholders
-   - `[Your Regional Language]`, `[Father's Full Name]`, address, etc.
+## How to Generate a PDF
 
-2. **Tweak the wording** to match the exact dates and duties from your
-   hospital training certificate, so it matches your training letter.
+1. Click on `CV.html` (or `CV-classic.html`) on GitHub.
+2. Click the **"Raw"** button → right-click → **Save As** → save the file.
+3. Double-click the saved file — it will open in your default browser.
+4. Press **`Ctrl + P`** (Windows) or **`Cmd + P`** (Mac).
+5. Choose **"Save as PDF"**, set paper size to **A4**, margins to **None**
+   (since the page already has internal margins), and **enable
+   "Background graphics"** so colours print correctly.
+6. Save as `Vinay_Kumar_CV.pdf` and email it to recruiters.
 
-3. **Generate a PDF** (recommended for sending to companies):
-   - Open `CV.html` in Chrome, Edge or Firefox.
-   - Press `Ctrl + P` (Windows) or `Cmd + P` (Mac).
-   - Choose **Save as PDF**, paper size **A4**, margins **Default**.
-   - Save it as `YourName_CV.pdf`.
+## Application Tips
 
-4. **Tailor it for each application.** For each pharmacy company you apply
-   to, slightly adjust the *Career Objective* to mention that company name
-   or its area of work (retail pharmacy, hospital pharmacy, manufacturing,
-   medical representative role, etc.).
+- Carry both versions to interviews so you can choose what fits the company.
+- Print on **good-quality 100 GSM A4 paper** for in-person submissions.
+- Always send the PDF (not the HTML) when emailing — name it
+  `Vinay_Kumar_CV.pdf`.
+- Carry your D.Pharm mark sheets, hospital training certificate, ID proof,
+  and a passport-size photo to all interviews.
+- Tailor the **Career Objective** slightly for each company you apply to.
 
-## Tips for Pharma Job Applications
-
-- Keep the CV to **one page** if possible. Two pages maximum.
-- Carry a **printed copy** plus your **D.Pharm mark sheets, hospital
-  training certificate, ID proof, and a passport-size photo** to interviews.
-- Save the file name as `FirstName_LastName_CV.pdf` when emailing.
-- In the email body, write a short, polite cover note (3–4 lines) and
-  attach the PDF — avoid pasting the whole CV into the email.
-
-Good luck with your training and applications!
+Best of luck with your training and applications!
