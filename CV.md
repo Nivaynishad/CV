@@ -30,12 +30,12 @@ National Institute of Electronics & Information Technology, Government of India
 - Certified in computer fundamentals, MS Office, internet usage, email and
   basic digital financial tools.
 
-**Higher Secondary Certificate (HSC / 12th)**
-Government Inter College, Ayodhya — U.P. Board
+**Higher Secondary Certificate (Class XII)**
+Kendriya Vidyalaya, Ayodhya — Central Board of Secondary Education (CBSE)
 *Year of Passing: 2023 | Stream: Science (PCB)*
 
-**Secondary School Certificate (SSC / 10th)**
-Government Inter College, Ayodhya — U.P. Board
+**Secondary School Certificate (Class X)**
+Kendriya Vidyalaya, Ayodhya — Central Board of Secondary Education (CBSE)
 *Year of Passing: 2021*
 
 ---
