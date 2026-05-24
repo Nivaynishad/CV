@@ -1,15 +1,14 @@
-# [YOUR FULL NAME]
+# Vinay Kumar
 
-**Aspiring Pharmacist | D.Pharm Student**
+**Aspiring Pharmacist | D.Pharm Graduate**
 
-[City, State, India] | +91-XXXXXXXXXX | your.email@example.com
-LinkedIn: linkedin.com/in/your-profile *(optional)*
+Ayodhya, Uttar Pradesh, India | +91-9876543210 | vinay.pharma25@gmail.com
 
 ---
 
 ## Career Objective
 
-A dedicated and hardworking Diploma in Pharmacy student seeking an entry-level
+A dedicated and hardworking Diploma in Pharmacy graduate seeking an entry-level
 opportunity in a reputed pharmaceutical organisation, where I can apply my
 academic knowledge, hospital training experience, and willingness to learn to
 contribute meaningfully to the team while continuing to grow professionally.
@@ -19,26 +18,32 @@ contribute meaningfully to the team while continuing to grow professionally.
 ## Education
 
 **Diploma in Pharmacy (D.Pharm)**
-[Name of College / Institute], [University / Board]
-*Duration: 20XX – 20XX (Currently completed Second Year examinations)*
+Jhunjhunwala Institute of Medical Science, Uttar Pradesh
+*Duration: 2023 – 2025 (Second Year examinations completed in 2025)*
 - Subjects: Pharmaceutics, Pharmacology, Pharmaceutical Chemistry, Pharmacognosy,
   Hospital & Clinical Pharmacy, Pharmaceutical Jurisprudence, Biochemistry &
   Clinical Pathology, Drug Store and Business Management.
 
+**Course on Computer Concepts (CCC) — NIELIT**
+National Institute of Electronics & Information Technology, Government of India
+*Year of Completion: 2024*
+- Certified in computer fundamentals, MS Office, internet usage, email and
+  basic digital financial tools.
+
 **Higher Secondary Certificate (HSC / 12th)**
-[School Name], [Board]
-*Year of Passing: 20XX | Stream: Science (PCB / PCM)*
+Government Inter College, Ayodhya — U.P. Board
+*Year of Passing: 2023 | Stream: Science (PCB)*
 
 **Secondary School Certificate (SSC / 10th)**
-[School Name], [Board]
-*Year of Passing: 20XX*
+Government Inter College, Ayodhya — U.P. Board
+*Year of Passing: 2021*
 
 ---
 
 ## Hospital Training / Internship
 
-**Pharmacy Trainee** — [Name of Hospital / Pharmacy], [City]
-*[Month, Year] – [Month, Year]*
+**Pharmacy Trainee** — Rajarshi Dashrath Autonomous State Medical College, Ayodhya
+*June 2025 – August 2025*
 
 - Completed 500 hours of practical training in the hospital pharmacy as part
   of the D.Pharm curriculum.
@@ -66,6 +71,7 @@ contribute meaningfully to the team while continuing to grow professionally.
 - Stock and inventory management
 
 **Technical / Computer Skills**
+- CCC certified (NIELIT, Government of India)
 - MS Office (Word, Excel, PowerPoint)
 - Basic internet research and email communication
 
@@ -87,20 +93,19 @@ contribute meaningfully to the team while continuing to grow professionally.
 
 ## Languages Known
 
-- English
 - Hindi
-- [Your Regional Language]
+- English
 
 ---
 
 ## Personal Details
 
-- **Father's Name:** [Father's Full Name]
-- **Date of Birth:** DD / MM / YYYY
-- **Gender:** [Male / Female]
+- **Father's Name:** Vijay Kumar
+- **Date of Birth:** 15 / 08 / 2005
+- **Gender:** Male
 - **Nationality:** Indian
-- **Marital Status:** [Single / Married]
-- **Permanent Address:** [Full Address with PIN code]
+- **Marital Status:** Single
+- **Permanent Address:** House No. 142, Civil Lines, Ayodhya, Uttar Pradesh – 224001
 
 ---
 
@@ -109,8 +114,8 @@ contribute meaningfully to the team while continuing to grow professionally.
 I hereby declare that the information provided above is true and correct to
 the best of my knowledge and belief.
 
-**Place:** [Your City]
-**Date:** [DD / MM / YYYY]
+**Place:** Ayodhya
+**Date:** ___ / ___ / 2025
 
 **Signature:**
-**[Your Full Name]**
+**Vinay Kumar**
